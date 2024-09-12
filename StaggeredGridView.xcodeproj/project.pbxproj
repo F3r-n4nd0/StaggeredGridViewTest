@@ -12,6 +12,12 @@
 		B2B61CA42C92946200A3722D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B61CA32C92946200A3722D /* Assets.xcassets */; };
 		B2B61CA72C92946200A3722D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B2B61CA62C92946200A3722D /* Base */; };
 		B2B61CB12C92961900A3722D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CB02C92961900A3722D /* RootViewController.swift */; };
+		B2B61CB32C9298D700A3722D /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CB22C9298D700A3722D /* RootViewModel.swift */; };
+		B2B61CB72C929BA500A3722D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CB62C929BA500A3722D /* Coordinator.swift */; };
+		B2B61CB92C929BBD00A3722D /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CB82C929BBD00A3722D /* RootCoordinator.swift */; };
+		B2B61CBD2C929D1A00A3722D /* StaggeredGridCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CBC2C929D1A00A3722D /* StaggeredGridCoordinator.swift */; };
+		B2B61CBF2C929D8A00A3722D /* StaggeredGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CBE2C929D8A00A3722D /* StaggeredGridViewModel.swift */; };
+		B2B61CC12C929DAB00A3722D /* StaggeredGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CC02C929DAB00A3722D /* StaggeredGridViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		B2B61CA62C92946200A3722D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2B61CA82C92946200A3722D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2B61CB02C92961900A3722D /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B2B61CB22C9298D700A3722D /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		B2B61CB62C929BA500A3722D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B2B61CB82C929BBD00A3722D /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		B2B61CBC2C929D1A00A3722D /* StaggeredGridCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGridCoordinator.swift; sourceTree = "<group>"; };
+		B2B61CBE2C929D8A00A3722D /* StaggeredGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGridViewModel.swift; sourceTree = "<group>"; };
+		B2B61CC02C929DAB00A3722D /* StaggeredGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGridViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +66,8 @@
 		B2B61C992C92946100A3722D /* StaggeredGridView */ = {
 			isa = PBXGroup;
 			children = (
-				B2B61CAF2C92961000A3722D /* Root */,
+				B2B61CB42C929B8300A3722D /* Common */,
+				B2B61CBA2C929CF900A3722D /* UI */,
 				B2B61C9A2C92946100A3722D /* AppDelegate.swift */,
 				B2B61C9C2C92946100A3722D /* SceneDelegate.swift */,
 				B2B61CAE2C9294A100A3722D /* Resources */,
@@ -75,9 +88,46 @@
 		B2B61CAF2C92961000A3722D /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				B2B61CB82C929BBD00A3722D /* RootCoordinator.swift */,
+				B2B61CB22C9298D700A3722D /* RootViewModel.swift */,
 				B2B61CB02C92961900A3722D /* RootViewController.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		B2B61CB42C929B8300A3722D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B2B61CB52C929B8D00A3722D /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B2B61CB52C929B8D00A3722D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B2B61CB62C929BA500A3722D /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B2B61CBA2C929CF900A3722D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B2B61CAF2C92961000A3722D /* Root */,
+				B2B61CBB2C929D0200A3722D /* StaggeredGrid */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B2B61CBB2C929D0200A3722D /* StaggeredGrid */ = {
+			isa = PBXGroup;
+			children = (
+				B2B61CBC2C929D1A00A3722D /* StaggeredGridCoordinator.swift */,
+				B2B61CBE2C929D8A00A3722D /* StaggeredGridViewModel.swift */,
+				B2B61CC02C929DAB00A3722D /* StaggeredGridViewController.swift */,
+			);
+			path = StaggeredGrid;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B61CC12C929DAB00A3722D /* StaggeredGridViewController.swift in Sources */,
 				B2B61C9B2C92946100A3722D /* AppDelegate.swift in Sources */,
 				B2B61C9D2C92946100A3722D /* SceneDelegate.swift in Sources */,
+				B2B61CB72C929BA500A3722D /* Coordinator.swift in Sources */,
+				B2B61CB32C9298D700A3722D /* RootViewModel.swift in Sources */,
+				B2B61CBD2C929D1A00A3722D /* StaggeredGridCoordinator.swift in Sources */,
+				B2B61CB92C929BBD00A3722D /* RootCoordinator.swift in Sources */,
 				B2B61CB12C92961900A3722D /* RootViewController.swift in Sources */,
+				B2B61CBF2C929D8A00A3722D /* StaggeredGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
