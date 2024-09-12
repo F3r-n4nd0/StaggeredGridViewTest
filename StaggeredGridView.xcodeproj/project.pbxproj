@@ -18,6 +18,13 @@
 		B2B61CBD2C929D1A00A3722D /* StaggeredGridCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CBC2C929D1A00A3722D /* StaggeredGridCoordinator.swift */; };
 		B2B61CBF2C929D8A00A3722D /* StaggeredGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CBE2C929D8A00A3722D /* StaggeredGridViewModel.swift */; };
 		B2B61CC12C929DAB00A3722D /* StaggeredGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CC02C929DAB00A3722D /* StaggeredGridViewController.swift */; };
+		B2B61CC72C92A6A800A3722D /* LayoutSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CC62C92A6A800A3722D /* LayoutSections.swift */; };
+		B2B61CCA2C92BC4E00A3722D /* SectionStyleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CC92C92BC4E00A3722D /* SectionStyleData.swift */; };
+		B2B61CCD2C92BD6C00A3722D /* RandomColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CCC2C92BD6C00A3722D /* RandomColoredView.swift */; };
+		B2B61CD02C92BDCB00A3722D /* Style1Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CCF2C92BDCB00A3722D /* Style1Data.swift */; };
+		B2B61CD22C92BDE700A3722D /* Style2Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CD12C92BDE700A3722D /* Style2Data.swift */; };
+		B2B61CD42C92BDEF00A3722D /* Style3Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CD32C92BDEF00A3722D /* Style3Data.swift */; };
+		B2B61CD62C92BFA000A3722D /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B61CD52C92BFA000A3722D /* CustomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,13 @@
 		B2B61CBC2C929D1A00A3722D /* StaggeredGridCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGridCoordinator.swift; sourceTree = "<group>"; };
 		B2B61CBE2C929D8A00A3722D /* StaggeredGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGridViewModel.swift; sourceTree = "<group>"; };
 		B2B61CC02C929DAB00A3722D /* StaggeredGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGridViewController.swift; sourceTree = "<group>"; };
+		B2B61CC62C92A6A800A3722D /* LayoutSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSections.swift; sourceTree = "<group>"; };
+		B2B61CC92C92BC4E00A3722D /* SectionStyleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionStyleData.swift; sourceTree = "<group>"; };
+		B2B61CCC2C92BD6C00A3722D /* RandomColoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColoredView.swift; sourceTree = "<group>"; };
+		B2B61CCF2C92BDCB00A3722D /* Style1Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style1Data.swift; sourceTree = "<group>"; };
+		B2B61CD12C92BDE700A3722D /* Style2Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style2Data.swift; sourceTree = "<group>"; };
+		B2B61CD32C92BDEF00A3722D /* Style3Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style3Data.swift; sourceTree = "<group>"; };
+		B2B61CD52C92BFA000A3722D /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 		B2B61C992C92946100A3722D /* StaggeredGridView */ = {
 			isa = PBXGroup;
 			children = (
+				B2B61CCB2C92BD5100A3722D /* Helper */,
 				B2B61CB42C929B8300A3722D /* Common */,
 				B2B61CBA2C929CF900A3722D /* UI */,
 				B2B61C9A2C92946100A3722D /* AppDelegate.swift */,
@@ -98,6 +113,7 @@
 		B2B61CB42C929B8300A3722D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B2B61CC22C929FF200A3722D /* View */,
 				B2B61CB52C929B8D00A3722D /* Protocols */,
 			);
 			path = Common;
@@ -107,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				B2B61CB62C929BA500A3722D /* Coordinator.swift */,
+				B2B61CC92C92BC4E00A3722D /* SectionStyleData.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -123,11 +140,39 @@
 		B2B61CBB2C929D0200A3722D /* StaggeredGrid */ = {
 			isa = PBXGroup;
 			children = (
+				B2B61CCE2C92BDC000A3722D /* Styles */,
 				B2B61CBC2C929D1A00A3722D /* StaggeredGridCoordinator.swift */,
 				B2B61CBE2C929D8A00A3722D /* StaggeredGridViewModel.swift */,
 				B2B61CC02C929DAB00A3722D /* StaggeredGridViewController.swift */,
 			);
 			path = StaggeredGrid;
+			sourceTree = "<group>";
+		};
+		B2B61CC22C929FF200A3722D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2B61CC62C92A6A800A3722D /* LayoutSections.swift */,
+				B2B61CD52C92BFA000A3722D /* CustomCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2B61CCB2C92BD5100A3722D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B2B61CCC2C92BD6C00A3722D /* RandomColoredView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B2B61CCE2C92BDC000A3722D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				B2B61CCF2C92BDCB00A3722D /* Style1Data.swift */,
+				B2B61CD12C92BDE700A3722D /* Style2Data.swift */,
+				B2B61CD32C92BDEF00A3722D /* Style3Data.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,14 +245,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B61CC72C92A6A800A3722D /* LayoutSections.swift in Sources */,
+				B2B61CCA2C92BC4E00A3722D /* SectionStyleData.swift in Sources */,
+				B2B61CCD2C92BD6C00A3722D /* RandomColoredView.swift in Sources */,
 				B2B61CC12C929DAB00A3722D /* StaggeredGridViewController.swift in Sources */,
 				B2B61C9B2C92946100A3722D /* AppDelegate.swift in Sources */,
 				B2B61C9D2C92946100A3722D /* SceneDelegate.swift in Sources */,
+				B2B61CD22C92BDE700A3722D /* Style2Data.swift in Sources */,
 				B2B61CB72C929BA500A3722D /* Coordinator.swift in Sources */,
+				B2B61CD02C92BDCB00A3722D /* Style1Data.swift in Sources */,
 				B2B61CB32C9298D700A3722D /* RootViewModel.swift in Sources */,
 				B2B61CBD2C929D1A00A3722D /* StaggeredGridCoordinator.swift in Sources */,
+				B2B61CD62C92BFA000A3722D /* CustomCollectionViewCell.swift in Sources */,
 				B2B61CB92C929BBD00A3722D /* RootCoordinator.swift in Sources */,
 				B2B61CB12C92961900A3722D /* RootViewController.swift in Sources */,
+				B2B61CD42C92BDEF00A3722D /* Style3Data.swift in Sources */,
 				B2B61CBF2C929D8A00A3722D /* StaggeredGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

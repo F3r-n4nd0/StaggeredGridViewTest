@@ -1,6 +1,6 @@
 import UIKit
 
-class StaggeredGridCoordinator: Coordinator {
+final class StaggeredGridCoordinator: Coordinator {
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
